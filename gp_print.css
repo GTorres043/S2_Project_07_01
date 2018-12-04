@@ -18,7 +18,7 @@
 
 /* Hidden Objects */
 
-
+/* this will hide the navigation footer and the article when printing the webpage */
 nav,
 footer,
 article {
@@ -31,6 +31,8 @@ article {
 
 
 /* Comic Book Sheet Styles */
+
+/* this will give the sizes to the webpage when printing it out  */
 section#sheet {
     width: 6in;
     margin: 0in auto;

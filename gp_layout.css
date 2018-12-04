@@ -22,12 +22,15 @@
 @import url("gp_designs.css");
 
 /* Flex Layout Styles */
+
+/* this will display the body as a flex and give it the up to date webkit for flex. it will also give a flex box flow of row wrap. the section with the ID sheet will make the h1 and image inside of it shrink and grow depending on the screen size same thing with the artcile  */
 body {
     display: -webkit-flex;
     display: flex;
     -webkit-flex-flow: row wrap;
     flex-flow: row wrap;
 }
+
 
 #sheet {
     flex-basis: 301px;
@@ -45,6 +48,8 @@ article {
 	Mobile Devices: 0 - 480 pixels
    ============================================
 */
+
+/* this section will affect the mobile devices with the screens no bigger than 480 pixels. it will change the width of the image with the class Panel and it will give the horizontal list a diffrent order on the page depending on the size. as well as the body footer */
 @media only screen and (max-width:480px) {
     img.panel {
         width: 100%;
@@ -65,6 +70,8 @@ article {
 	Tablet and Desktop Devices: Greater than 480 pixels
    ===================================================
 */
+
+/* this section will give a style to computer and tablet devices with a screen no bigger than 480 pixels. it will give the horizontal navigation list a display if flex and give it the up to date webkit.  then it will give a flex flow of row nowrap kind of making it a default and a hieght of 40px */
 @media only screen and (min-width: 481px) {
     nav.horizontal ul {
         display: -webkit-flex;
@@ -79,6 +86,7 @@ article {
         flex: 1 1 auto;
     }
 
+    /* this small section of images will affect the image sizes */
     img.size1 {
         width: 100%;
     }
